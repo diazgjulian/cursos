@@ -29,7 +29,6 @@
     </body>
         <script type="text/javascript">
             const youtubeEmbedRoot = 'https://www.youtube.com/embed/QNjYwCiJBIk?autoplay=1&loop=1&controls=0&mute=1'
-            
             const params = (new URL(window.location.href)).searchParams
             const viewstate = params.get('viewstate') || 640
 
@@ -37,8 +36,8 @@
             video.setAttribute('width', viewstate)
             video.setAttribute('height', viewstate)
 
-            
-            const youtubeUrl = `https://www.youtube.com/embed/QNjYwCiJBIk?autoplay=1&loop=1&controls=0&mute=1`
+            const videoId = 'QNjYwCiJBIk'
+            const youtubeUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1&loop=1&controls=0&mute=1`
             video.setAttribute('src', youtubeUrl)
         </script>
 </html>
